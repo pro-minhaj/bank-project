@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-10/12 font-serif sm:w-2/3 mx-auto ">
+    <main class="">
+        <header class="my-10">
+            <h1 class=" text-center text-3xl sm:text-4xl text-[#10b981]">Welcome To Your Bank</h1>
+            <div class="flex items-center justify-between flex-wrap mt-4 gap-y-4">
+                <div class="cursor-pointer flex items-center gap-2">
+                    <div class="w-12">
+                        <img class="w-full rounded-full" src="./img/20231021_120024_0000.png" alt="">
+                    </div>
+                    <p class="mt-0">Hey Minhaj</p>
+                </div>
+                <button id="logout-btn" class="bg-[#dc2626] text-white font-normal px-7 py-1 text-base rounded-md hover:bg-[#ef4444]">Logout</button>
+            </div>
+            
+        </header>
+        <section class="flex flex-col gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-[#fb923c] p-12 text-white rounded-md">
+                    <h3 class="text-4xl lg:text-3xl">Deposit</h3>
+                    <h2 class="mt-2 font-sans text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-[#059669] p-12 text-white rounded-md">
+                    <h3 class="text-4xl lg:text-3xl">Withdraw</h3>
+                    <h2 class="mt-2 font-sans text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-[#7e22ce] p-12 text-white rounded-md">
+                    <h3 class="text-4xl lg:text-3xl">Balance</h3>
+                    <h2 class="mt-2 font-sans text-5xl">$<span id="balance-total">1200</span></h2>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
+                <div class="bg-[#4f46e5] p-12 text-white rounded-md flex flex-col items-start gap-2">
+                    <h3 class="text-4xl lg:text-3xl mb-1">Please Deposit</h3>
+                    <input id="deposit-fuild" class="w-full px-3 text-lg py-1 text-black" type="text" placeholder="$ Amount You Went To Deposit">
+                    <button id="deposit-btn" class="bg-[#f59e0b] font-normal px-6 py-1 mt-2 rounded-md">Deposit</button>
+                </div>
+                <div class="bg-[#b91c1c] p-12 text-white rounded-md flex flex-col items-start gap-2">
+                    <h3 class="text-4xl lg:text-3xl mb-1">Please Withdraw</h3>
+                    <input id="withdraw-fuild" class="w-full px-3 text-lg py-1 text-black" type="text" placeholder="$ Amount You Went To Withdraw">
+                    <button id="withdraw-btn" class="bg-[#f59e0b] font-normal px-6 py-1 mt-2 rounded-md">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="./js/bank-page.js"></script>
+</body>
+</html>
