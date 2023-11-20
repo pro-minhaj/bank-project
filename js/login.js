@@ -9,7 +9,7 @@ document.getElementById('submit-btn').addEventListener('click', function(){
     
     // Condetions
     if(emailValue === 'minhaj@gmail.com' && passwordValue === '322532'){
-        window.location.href = 'bank-page.html';
+        window.location.href = './bank-page.html';
     }
     else{
         alert('Plase Enter Your Valid Email And Password');
