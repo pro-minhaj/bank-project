@@ -1,1 +1,1 @@
-﻿# This project of a Deposit and Withdraw with Total counting project.
+﻿# This project of a Deposit and Withdrawal with Total counting project.
