@@ -1,5 +1,5 @@
 document.getElementById('logout-btn').addEventListener('click', function(){
-    window.location.href = './login.html';
+    window.location.href = './index.html';
 });
 
 document.getElementById('deposit-btn').addEventListener('click', function(){
